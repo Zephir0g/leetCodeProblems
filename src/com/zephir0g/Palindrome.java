@@ -1,11 +1,15 @@
 package com.zephir0g;
 
 import javax.sound.midi.Soundbank;
+import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String[] args) {
 
-        int x = -121;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int x = scanner.nextInt();
+
 
         System.out.println(isPalindrome(x));
     }
